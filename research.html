@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Albert Tianyu Yan's research in economics and finance, including working papers, and working in progress projects.">
+    <meta name="keywords" content="Albert Yan, Economics, Finance, PhD, University of Texas, Austin, Research, Working Papers, Publications, Projects">
+    <title>Albert Yan - Research</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Albert Tianyu Yan</a></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="current"><a href="research.html">Research</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <!-- <li><a href="blog.html">Blogs</a></li> -->
+            </ul>
+        </nav>
+    </header>   
+
+    <section class="main">
+        <div class="container">
+            <h2>Research</h2>
+            
+            <h3>Working Papers</h3>
+            <ul>
+                <li style="margin-bottom: 8px;">
+                    <strong>From Idea to Innovation: Scientific Disclosures, Technology News, and Business Cycles</a></strong>
+                    <a href = "https://drive.google.com/file/d/1zhGInXGiIZzKk8Yj45CQ2LOjiRpEFWrs/view?usp=sharing" target="_blank">[paper]</a> <a href="https://drive.google.com/file/d/1O_otqElO50w8891acQa2hP6CuDYE6SCY/view?usp=sharing" target="_blank">[slides]</a> 
+                    <p>
+                    I construct a publication-based proxy for technology news shocks. This forward-looking measure predicts delayed TFP responses and drives business cycle fluctuations. It provides a novel channel linking scientific discovery to macroeconomic expectations and real activity.
+                    </p>
+                </li>
+            </ul>
+
+            <h3>Work in Progress</h3>
+            <ul>
+                <li style="margin-bottom: 8px;">
+                    <strong>Why Do We Disagree about Macroeconomy? Evidence from Social Media</a></strong>
+                    <p>
+                    I use large-scale social media data to decompose disagreement about the macroeconomy into
+                    state-based and model-based components to examine how different sources of belief disagreement
+                    arise and their potential implications for volatility and pricing in financial markets.
+                    </p>        
+                </li>
+                <li style="margin-bottom: 8px;">
+                    <strong>Scientific Discoveries and Predictability of Stock Prices</a></strong>
+                    <p>
+                     I construct a novel Scientific Discovery Index (SDI) capturing early signals of scientific progress.
+                     I hypothesize that SDI predicts long-run stock returns, indicating that scientific discoveries
+                     embed forward information about future innovation, productivity, and asset values.
+                    </p>
+                     
+                </li>
+                <li style="margin-bottom: 8px;">
+                    <strong>Technology News and Firm Values: How Analysts Interpret Technology News?</a></strong>,
+                    <p>
+                        I examine how equity analysts interpret technology-related news using RavenPack event data.
+                        The project reveals how technological information is processed by financial markets, shaping
+                        investor beliefs and influencing when and how innovation becomes reflected in asset prices.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('nav');
+    
+    hamburger.addEventListener('click', function() {
+        hamburger.classList.toggle('active');
+        nav.classList.toggle('active');
+    });
+    
+    // Close menu when clicking on nav links
+    const navLinks = document.querySelectorAll('nav a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            hamburger.classList.remove('active');
+            nav.classList.remove('active');
+        });
+    });
+});
+</script>
+
+</body>
+</html>

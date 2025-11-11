@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Albert Tianyu Yan's blog on research, innovation, and academic life.">
+    <meta name="keywords" content="Albert Yan, Blog, Research, Innovation, Academic Life, Economics, Finance">
+    <title>Albert Yan - Blogs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Albert Tianyu Yan</a></h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li class="current"><a href="blog.html">Blogs</a></li>
+            </ul>
+        </nav>
+    </header>   
+
+    <section class="main">
+        <div class="container">
+            <h2>Blogs</h2>
+            <p>This is where I occasionally post thoughts on research, innovation, and academic life.</p>
+            
+            <h3>Recent Posts</h3>
+            <ul>
+                <li>
+                    <strong><a href="#">Coming soon: My thoughts on measuring technology expectations</a></strong>
+                </li>
+                <!-- Add more blog entries as needed -->
+            </ul>
+        </div>
+    </section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('nav');
+    
+    hamburger.addEventListener('click', function() {
+        hamburger.classList.toggle('active');
+        nav.classList.toggle('active');
+    });
+    
+    // Close menu when clicking on nav links
+    const navLinks = document.querySelectorAll('nav a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            hamburger.classList.remove('active');
+            nav.classList.remove('active');
+        });
+    });
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --clr-text-primary: #000;
+    --clr-text-secondary: #333;
+    --clr-text-muted: #666;
+}
+
+/* Ensure consistent box model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Add universal box-sizing reset (including pseudo-elements) */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Add vendor prefixes for compatibility */
+html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6em;
+    color: var(--clr-text-primary);
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+/* Ensure responsive images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Improved link accessibility */
+a {
+    transition: color 0.3s ease, background-color 0.3s ease;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+}
+
+a:focus {
+    outline: 2px solid #007acc;
+    outline-offset: 2px;
+}
+
+h2 {
+    text-align: center;
+    font-size: clamp(24px, 5vw, 44px);
+    font-weight: 300;
+    margin-bottom: clamp(25px, 5vw, 50px);
+    color: var(--clr-text-secondary);
+}
+
+h3 {
+    margin-bottom: 5px;
+    margin-top: clamp(20px, 3vw, 30px);
+    color: var(--clr-text-secondary);
+    font-size: clamp(18px, 2.5vw, 22px);
+}
+
+h4 {
+    margin-bottom: 5px;
+    color: var(--clr-text-secondary);
+    font-size: clamp(16px, 2.2vw, 20px);
+    font-weight: 600;
+}
+
+/* Teaching page - indent course lists under h4 */
+h4 + ul {
+    margin-left: 20px;
+}
+
+/* Ensure consistent list styles */
+ol, ul {
+    list-style: none;
+}
+
+/* Add hyphenation for better word wrapping */
+ol li, ul li {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+}
+
+ol li p, ul li p {
+    font-size: clamp(16px, 1.8vw, 18px);
+    color: var(--clr-text-primary);
+    margin-top: 5px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+ol li strong, ul li strong {
+    font-size: clamp(16px, 1.8vw, 18px);
+    color: var(--clr-text-primary);
+}
+
+/* Research page links */
+ol li a, ul li a {
+    color: var(--clr-text-primary);
+    text-decoration: underline;
+}
+
+ol li a:hover, ul li a:hover {
+    color: var(--clr-text-muted);
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    border-bottom: none;
+    width: 97%;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: clamp(18px, 2.5vw, 24px);
+    font-weight: 400;
+    color: var(--clr-text-primary);
+}
+
+header h1 a {
+    text-decoration: none;
+    color: var(--clr-text-primary);
+}
+
+header h1 a:hover {
+    color: var(--clr-text-muted);
+}
+
+/* Navigation styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: clamp(15px, 3vw, 30px);
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--clr-text-muted);
+    font-size: clamp(16px, 2vw, 20px);
+    transition: color 0.3s ease;
+    padding: clamp(6px, 1vw, 8px) clamp(8px, 1.5vw, 12px);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    color: var(--clr-text-secondary);
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+nav ul li.current a {
+    color: var(--clr-text-primary);
+    font-weight: 600;
+}
+
+
+
+/* Main content styles */
+.main {
+    padding: clamp(20px, 4vw, 40px) 0;
+}
+
+.container {
+    width: clamp(300px, 90vw, 1200px);
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Profile container */
+.profile-container {
+    display: flex;
+    gap: clamp(25px, 4vw, 40px);
+    align-items: flex-start;
+    text-align: left;
+}
+
+.profile-text {
+    flex: 2;
+    line-height: 1.8em;
+    text-align: left;
+}
+
+.profile-text p {
+    margin-bottom: clamp(15px, 2.5vw, 25px);
+    color: var(--clr-text-primary);
+    font-size: clamp(16px, 1.8vw, 18px);
+}
+
+.profile-text strong {
+    color: var(--clr-text-primary);
+    font-weight: 600;
+    display: inline;
+    margin-bottom: 2px;
+    line-height: 1.2;
+}
+
+.profile-text a {
+    color: var(--clr-text-primary);
+    text-decoration: underline;
+}
+
+.profile-text a:hover {
+    color: var(--clr-text-muted);
+}
+
+/* Profile photo */
+.profile-photo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-photo img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+ul li p {
+    margin-top: 0px; /* Reduce the top margin of the paragraph */
+}
+
+/* Responsive design */
+/* Tablet styles */
+@media (max-width: 1024px) {
+    .container {
+        width: 85%;
+    }
+    
+    .profile-container {
+        gap: 30px;
+    }
+    
+    .profile-photo img {
+        width: 220px;
+        height: 270px;
+    }
+}
+
+/* Mobile landscape and small tablets */
+@media (max-width: 768px) {
+    body {
+        padding: 0 15px;
+    }
+    
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+    }
+    
+    nav ul {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    nav ul li a {
+        font-size: 18px;
+        padding: 10px 15px;
+        min-height: 48px;
+    }
+    
+    .container {
+        width: 95%;
+        padding: 0 10px;
+    }
+    
+    .main {
+        padding: 20px 0;
+    }
+    
+    h2 {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+    
+    h3 {
+        font-size: 20px;
+        margin-top: 25px;
+    }
+    
+    h4 {
+        font-size: 18px;
+    }
+    
+    .profile-container {
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+    }
+    
+    .profile-text p {
+        font-size: 16px;
+        margin-bottom: 20px;
+        line-height: 1.6;
+    }
+    
+    .profile-photo {
+        align-self: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .profile-photo img {
+        width: 200px;
+        height: 240px;
+        margin: 0 auto;
+    }
+    
+    h4 + ul {
+        margin-left: 10px;
+    }
+    
+    ol li, ul li {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+    
+    ol li p, ul li p {
+        font-size: 16px;
+        word-break: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+    }
+}
+
+/* Mobile portrait */
+@media (max-width: 480px) {
+    body {
+        padding: 0 10px;
+    }
+    
+    header {
+        padding: 15px 0;
+    }
+    
+    header h1 {
+        font-size: 20px;
+    }
+    
+    nav ul {
+        gap: 5px;
+    }
+    
+    nav ul li a {
+        font-size: 16px;
+        padding: 8px 12px;
+        min-height: 44px;
+    }
+    
+    .container {
+        width: 100%;
+        padding: 0 5px;
+    }
+    
+    .main {
+        padding: 15px 0;
+    }
+    
+    h2 {
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+    
+    h3 {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    
+    h4 {
+        font-size: 16px;
+    }
+    
+    .profile-container {
+        gap: 20px;
+    }
+    
+    .profile-text p {
+        font-size: 15px;
+        margin-bottom: 15px;
+        line-height: 1.5;
+    }
+    
+    .profile-photo img {
+        width: 180px;
+        height: 216px;
+    }
+    
+    ol li, ul li {
+        font-size: 14px;
+        line-height: 1.4;
+        margin-bottom: 5px;
+    }
+    
+    ol li p, ul li p {
+        font-size: 15px;
+        margin-top: 3px;
+    }
+    
+    ol li strong, ul li strong {
+        font-size: 15px;
+    }
+}
+
+/* Very small mobile screens */
+@media (max-width: 320px) {
+    header h1 {
+        font-size: 18px;
+    }
+    
+    nav ul li a {
+        font-size: 14px;
+        padding: 6px 8px;
+    }
+    
+    h2 {
+        font-size: 24px;
+    }
+    
+    .profile-text p {
+        font-size: 14px;
+    }
+    
+    .profile-photo img {
+        width: 160px;
+        height: 192px;
+    }
+}
