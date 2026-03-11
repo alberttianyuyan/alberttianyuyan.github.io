@@ -65,8 +65,8 @@ h2 {
 }
 
 h3 {
-    margin-bottom: 5px;
-    margin-top: clamp(20px, 3vw, 30px);
+    margin-bottom: 12px;
+    margin-top: clamp(40px, 5vw, 55px);
     color: var(--clr-text-secondary);
     font-size: clamp(18px, 2.5vw, 22px);
 }
