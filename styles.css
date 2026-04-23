@@ -4,6 +4,8 @@
     --clr-text-primary: #000;
     --clr-text-secondary: #333;
     --clr-text-muted: #666;
+    --content-font-size: clamp(18px, 2.2vw, 22px);
+    --content-line-height: 1.75;
 }
 
 /* Ensure consistent box model */
@@ -90,6 +92,8 @@ ol, ul {
 
 /* Add hyphenation for better word wrapping */
 ol li, ul li {
+    font-size: var(--content-font-size);
+    line-height: var(--content-line-height);
     word-wrap: break-word;
     overflow-wrap: break-word;
     hyphens: auto;
@@ -98,7 +102,8 @@ ol li, ul li {
 }
 
 ol li p, ul li p {
-    font-size: clamp(16px, 1.8vw, 18px);
+    font-size: var(--content-font-size);
+    line-height: var(--content-line-height);
     color: var(--clr-text-primary);
     margin-top: 0px;
     word-wrap: break-word;
@@ -109,7 +114,8 @@ ol li p, ul li p {
 
 
 ol li strong, ul li strong {
-    font-size: clamp(16px, 1.8vw, 18px);
+    font-size: var(--content-font-size);
+    line-height: var(--content-line-height);
     color: var(--clr-text-primary);
 }
 
@@ -211,54 +217,41 @@ nav ul li.current a {
 .profile-text p {
     margin-bottom: clamp(15px, 2.5vw, 25px);
     color: var(--clr-text-primary);
-    font-size: clamp(16px, 1.8vw, 18px);
+    font-size: var(--content-font-size);
+    line-height: var(--content-line-height);
 }
 
 .profile-text strong {
     color: var(--clr-text-primary);
+    font-size: var(--content-font-size);
+    line-height: var(--content-line-height);
     font-weight: 600;
     display: inline;
     margin-bottom: 2px;
-    line-height: 1.2;
 }
 
 .profile-text a {
     color: var(--clr-text-primary);
     text-decoration: underline;
+    font-size: var(--content-font-size);
+    line-height: var(--content-line-height);
 }
 
 .profile-text a:hover {
     color: var(--clr-text-muted);
 }
 
-/* Larger reading size for content-heavy pages */
-body.blog-page .container > p,
-body.research-page .container > p,
-body.teaching-page .container > p,
-body.home-page .profile-text p,
-body.blog-page .container li,
-body.research-page .container li,
-body.teaching-page .container li,
-body.home-page .profile-text li,
-body.blog-page .container li a,
-body.research-page .container li a,
-body.teaching-page .container li a,
-body.home-page .profile-text a,
-body.blog-page .container li strong,
-body.research-page .container li strong,
-body.teaching-page .container li strong,
-body.home-page .profile-text strong {
-    font-size: clamp(18px, 2.2vw, 22px);
-    line-height: 1.75;
+/* Keep top-level page paragraph text consistent with list/body text */
+.container > p {
+    font-size: var(--content-font-size);
+    line-height: var(--content-line-height);
 }
 
-body.blog-page h3,
-body.research-page h3,
-body.teaching-page h3 {
+h3 {
     font-size: clamp(22px, 2.9vw, 28px);
 }
 
-body.teaching-page h4 {
+h4 {
     font-size: clamp(20px, 2.6vw, 24px);
 }
 
@@ -351,9 +344,7 @@ body.teaching-page h4 {
     }
     
     .profile-text p {
-        font-size: 16px;
         margin-bottom: 20px;
-        line-height: 1.6;
     }
     
     .profile-photo {
@@ -372,13 +363,7 @@ body.teaching-page h4 {
         margin-left: 10px;
     }
     
-    ol li, ul li {
-        font-size: 15px;
-        line-height: 1.5;
-    }
-    
     ol li p, ul li p {
-        font-size: 16px;
         word-break: break-word;
         overflow-wrap: break-word;
         hyphens: auto;
@@ -439,9 +424,7 @@ body.teaching-page h4 {
     }
     
     .profile-text p {
-        font-size: 15px;
         margin-bottom: 15px;
-        line-height: 1.5;
     }
     
     .profile-photo img {
@@ -450,19 +433,13 @@ body.teaching-page h4 {
     }
     
     ol li, ul li {
-        font-size: 14px;
-        line-height: 1.4;
         margin-bottom: 5px;
     }
     
     ol li p, ul li p {
-        font-size: 15px;
         margin-top: 3px;
     }
     
-    ol li strong, ul li strong {
-        font-size: 15px;
-    }
 }
 
 /* Very small mobile screens */
@@ -478,10 +455,6 @@ body.teaching-page h4 {
     
     h2 {
         font-size: 24px;
-    }
-    
-    .profile-text p {
-        font-size: 14px;
     }
     
     .profile-photo img {
