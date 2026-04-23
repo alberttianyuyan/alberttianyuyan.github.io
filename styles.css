@@ -231,6 +231,37 @@ nav ul li.current a {
     color: var(--clr-text-muted);
 }
 
+/* Larger reading size for content-heavy pages */
+body.blog-page .container > p,
+body.research-page .container > p,
+body.teaching-page .container > p,
+body.home-page .profile-text p,
+body.blog-page .container li,
+body.research-page .container li,
+body.teaching-page .container li,
+body.home-page .profile-text li,
+body.blog-page .container li a,
+body.research-page .container li a,
+body.teaching-page .container li a,
+body.home-page .profile-text a,
+body.blog-page .container li strong,
+body.research-page .container li strong,
+body.teaching-page .container li strong,
+body.home-page .profile-text strong {
+    font-size: clamp(18px, 2.2vw, 22px);
+    line-height: 1.75;
+}
+
+body.blog-page h3,
+body.research-page h3,
+body.teaching-page h3 {
+    font-size: clamp(22px, 2.9vw, 28px);
+}
+
+body.teaching-page h4 {
+    font-size: clamp(20px, 2.6vw, 24px);
+}
+
 /* Profile photo */
 .profile-photo {
     flex: 1;
