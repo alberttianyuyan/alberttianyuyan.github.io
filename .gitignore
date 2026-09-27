@@ -1,0 +1,15 @@
+# Everything in this folder is served by GitHub Pages, so anything committed
+# here becomes public. The published site is pure static HTML/CSS/JS.
+#
+# The local-only tooling below is deliberately NOT published. `*.py` is the rule
+# that matters: `*.py[cod]` only matches the compiled .pyc/.pyo/.pyd files, so
+# without it the scripts themselves get swept up by a `git add -A`.
+*.py
+.vscode/
+
+# Python leaves these behind when those scripts run.
+__pycache__/
+*.py[cod]
+
+# Personal reference notes — local only, deliberately never published.
+seo-notes.txt

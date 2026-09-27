@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hans">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,23 +8,19 @@
          safely collapse. Without JS the full menu stays visible on every page. -->
     <script>document.documentElement.classList.add('js-nav');</script>
 
-    <!-- description is what shows in the search-result snippet under the title.
-         First person, naming the position, institution and the four research
-         areas. Keep it descriptive - padding it with extra terms just gives
-         Google a reason to rewrite the snippet instead of using it. -->
-    <meta name="description" content="I am a PhD student in Economics at UT Austin working on behavioral economics, macro-finance, causal inference, and machine learning.">
-    <meta name="keywords" content="Albert Yan, Tianyu, Yan, Economics, Finance, PhD, University of Texas, Austin, Research, Teaching, Blog">
-    <title>Albert Tianyu Yan</title>
-    <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="favicon-96.png" sizes="96x96" type="image/png">
+    <meta name="description" content="我是德克萨斯大学奥斯汀分校经济学博士生，主要研究行为经济学、宏观金融、因果推断与机器学习。">
+    <meta name="keywords" content="闫天雨, Albert Yan, 经济学, 金融学, 博士, 德克萨斯大学奥斯汀分校, 研究, 教学, 博客">
+    <title>闫天雨</title>
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="../favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="../favicon-96.png" sizes="96x96" type="image/png">
     <!-- The font is linked here rather than @import-ed from styles.css: an
          @import is only discovered once the stylesheet has downloaded, which
          delays the font request and blocks text rendering until it lands. -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
 
     <!-- Tells search engines that these URLs are the same page in other
          languages, so they are not treated as duplicate content. -->
@@ -57,38 +53,38 @@
                 "@type": "WebSite",
                 "@id": "https://alberttianyuyan.github.io/#website",
                 "url": "https://alberttianyuyan.github.io/",
-                "name": "Tianyu Yan",
-                "inLanguage": "en"
+                "name": "闫天雨",
+                "inLanguage": "zh-Hans"
             },
             {
                 "@type": "Person",
                 "@id": "https://alberttianyuyan.github.io/#person",
-                "name": "Tianyu Yan",
+                "name": "闫天雨",
                 "alternateName": ["Albert Tianyu Yan", "Albert Yan"],
                 "url": "https://alberttianyuyan.github.io/",
-                "jobTitle": "PhD student in Economics",
+                "jobTitle": "经济学博士生",
                 "email": "mailto:tianyu.yan@utexas.edu",
                 "image": "https://alberttianyuyan.github.io/headshot_profile_photo.webp",
                 "affiliation": {
                     "@type": "CollegeOrUniversity",
-                    "name": "University of Texas at Austin"
+                    "name": "德克萨斯大学奥斯汀分校"
                 },
                 "alumniOf": {
                     "@type": "CollegeOrUniversity",
-                    "name": "New York University"
+                    "name": "纽约大学"
                 },
                 "knowsAbout": [
-                    "Behavioral Economics",
-                    "Economics",
-                    "Finance"
+                    "行为经济学",
+                    "经济学",
+                    "金融学"
                 ]
             },
             {
                 "@type": "ProfilePage",
-                "@id": "https://alberttianyuyan.github.io/index.html#page",
-                "url": "https://alberttianyuyan.github.io/index.html",
-                "name": "Albert Tianyu Yan",
-                "inLanguage": "en",
+                "@id": "https://alberttianyuyan.github.io/zh-cn/index.html#page",
+                "url": "https://alberttianyuyan.github.io/zh-cn/index.html",
+                "name": "闫天雨",
+                "inLanguage": "zh-Hans",
                 "isPartOf": {
                     "@id": "https://alberttianyuyan.github.io/#website"
                 },
@@ -105,42 +101,42 @@
     <!-- Keyboard-only shortcut past the header. Sits off-screen until
          focused, so it is invisible to mouse users but is the first
          thing a keyboard user reaches. -->
-    <a class="skip-link" href="#main">Skip to content</a>
+    <a class="skip-link" href="#main">跳到主要内容</a>
     <header>
-        <button class="hamburger" type="button" aria-label="Open menu"
+        <button class="hamburger" type="button" aria-label="打开菜单"
                 aria-expanded="false" aria-controls="site-nav">
             <span></span>
             <span></span>
             <span></span>
         </button>
-        <h1><a href="index.html">Albert Tianyu Yan</a></h1>
+        <h1><a href="index.html">闫天雨</a></h1>
         <nav id="site-nav">
-            <button class="nav-close" type="button" aria-label="Close menu">
+            <button class="nav-close" type="button" aria-label="关闭菜单">
                 <span class="icon-x"></span>
             </button>
             <ul>
-                <li class="current"><a href="index.html">Home</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="teaching.html">Teaching</a></li>
-                <li><a href="blog.html">Blogs</a></li>
+                <li class="current"><a href="index.html">首页</a></li>
+                <li><a href="research.html">研究</a></li>
+                <li><a href="teaching.html">教学</a></li>
+                <li><a href="blog.html">博客</a></li>
             </ul>
         </nav>
         <details class="lang-switch">
-            <summary aria-label="Language">
+            <summary aria-label="语言">
                 <svg class="lang-switch__globe" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
                     <circle cx="12" cy="12" r="9"></circle>
                     <path d="M3 12h18"></path>
                     <path d="M12 3c2.6 2.7 2.6 15.3 0 18-2.6-2.7-2.6-15.3 0-18z"></path>
                 </svg>
-                <span>EN</span>
+                <span>简</span>
             </summary>
             <ul class="lang-switch__menu">
-                <li><a href="index.html" hreflang="en" aria-current="true">English</a></li>
-                <li><a href="zh-cn/index.html" hreflang="zh-Hans">简体中文</a></li>
-                <li><a href="zh-hk/index.html" hreflang="zh-HK">繁體中文</a></li>
+                <li><a href="../index.html" hreflang="en">English</a></li>
+                <li><a href="../zh-cn/index.html" hreflang="zh-Hans" aria-current="true">简体中文</a></li>
+                <li><a href="../zh-hk/index.html" hreflang="zh-HK">繁體中文</a></li>
             </ul>
         </details>
-        <button class="search-toggle" type="button" aria-label="Search this site">
+        <button class="search-toggle" type="button" aria-label="搜索本站">
             <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
                 <circle cx="11" cy="11" r="7"></circle>
                 <line x1="16.5" y1="16.5" x2="21" y2="21"></line>
@@ -149,46 +145,43 @@
         <div class="nav-backdrop"></div>
     </header>
 
-
-<section class="main" id="main" tabindex="-1">
-    <div class="container">
-        <h2>Home</h2>
+    <section class="main" id="main" tabindex="-1">
+        <div class="container">
+            <h2>首页</h2>
         <div class="profile-container">
             <div class="profile-text">
                 <p>
-                I am a PhD student in Economics at the University of Texas, Austin. Before joining UT Austin, I received my B.A. in Computer Science and Economics from New York University.
+                我是德克萨斯大学奥斯汀分校经济学博士生。加入 UT Austin 之前，我在纽约大学获得计算机科学与经济学学士学位。
                 </p>
                 <p>
-                <strong>RESEARCH INTERESTS</strong><br>
-                Behavioral Economics <br>
-                <!-- <strong><a href="research_statement.pdf">Research Statement</a></strong> (December 2025) -->
-                </p>
-                
-                <p>
-                <strong>CV</strong><br>
-                <a href="https://drive.google.com/file/d/10ALan3dw9dSdMoITfeqEgj5Hn8NKNeBR/view?usp=sharing" target="_blank">Click here</a> for a copy of my CV.<br>
+                <strong>研究兴趣</strong><br>
+                行为经济学
                 </p>
                 <p>
-                <strong>CONTACT</strong><br>
-                Email: tianyu.yan@utexas.edu
+                <strong>简历</strong><br>
+                <a href="https://drive.google.com/file/d/10ALan3dw9dSdMoITfeqEgj5Hn8NKNeBR/view?usp=sharing" target="_blank">点击此处</a>查看我的简历。
+                </p>
+                <p>
+                <strong>联系方式</strong><br>
+                邮箱：tianyu.yan@utexas.edu
                 </p>
             </div>
             <div class="profile-photo">
-                <img src="headshot_profile_photo.webp" alt="Tianyu Yan, PhD student in Economics" width="250" height="300">
+                <img src="../headshot_profile_photo.webp" alt="闫天雨，经济学博士生" width="250" height="300">
             </div>
         </div>
-    </div>
-</section>
+        </div>
+    </section>
 
-<dialog class="search-dialog" id="search-dialog" aria-label="Search this site">
+<dialog class="search-dialog" id="search-dialog" aria-label="搜索本站">
     <div class="search-field">
         <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
             <circle cx="11" cy="11" r="7"></circle>
             <line x1="16.5" y1="16.5" x2="21" y2="21"></line>
         </svg>
-        <input type="search" id="search-input" placeholder="Search this site"
+        <input type="search" id="search-input" placeholder="搜索本站"
                autocomplete="off" autocapitalize="off" spellcheck="false">
-        <button class="search-close" type="button" aria-label="Close search">
+        <button class="search-close" type="button" aria-label="关闭搜索">
             <span class="icon-x"></span>
         </button>
     </div>
@@ -196,8 +189,18 @@
     <ul class="search-results" id="search-results"></ul>
 </dialog>
 
-<script src="search-index.js" defer></script>
-<script src="script.js" defer></script>
+<script>
+    /* Lets script.js report search results in this page's language. */
+    window.SITE_I18N = {
+        hint: "搜索全站内容 — 按 Esc 关闭。",
+        indexEmpty: "搜索索引为空。",
+        resultsOne: "1 条结果",
+        resultsMany: "{n} 条结果",
+        noResults: "没有找到“{q}”"
+    };
+</script>
+<script src="../search-index.zh-cn.js" defer></script>
+<script src="../script.js" defer></script>
 
 </body>
 </html>

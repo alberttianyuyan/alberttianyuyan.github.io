@@ -3,15 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn about Albert Tianyu Yan's research in economics and finance, including working papers, and working in progress projects.">
+
+    <!-- Flag that JS is available before styles apply, so the mobile menu can
+         safely collapse. Without JS the full menu stays visible on every page. -->
+    <script>document.documentElement.classList.add('js-nav');</script>
+
+    <meta name="description" content="Working papers and research in progress by Albert Tianyu Yan, PhD student in Economics at the University of Texas at Austin. Slides and paper links.">
     <meta name="keywords" content="Albert Yan, Economics, Finance, PhD, University of Texas, Austin, Research, Working Papers, Publications, Projects">
-    <title>Albert Yan - Research</title>
+    <title>Albert Tianyu Yan - Research</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="favicon-96.png" sizes="96x96" type="image/png">
+    <!-- The font is linked here rather than @import-ed from styles.css: an
+         @import is only discovered once the stylesheet has downloaded, which
+         delays the font request and blocks text rendering until it lands. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Tells search engines that these URLs are the same page in other
+         languages, so they are not treated as duplicate content. -->
+    <link rel="alternate" hreflang="en" href="https://alberttianyuyan.github.io/research.html">
+    <link rel="alternate" hreflang="zh-Hans" href="https://alberttianyuyan.github.io/zh-cn/research.html">
+    <link rel="alternate" hreflang="zh-HK" href="https://alberttianyuyan.github.io/zh-hk/research.html">
+    <link rel="alternate" hreflang="x-default" href="https://alberttianyuyan.github.io/research.html">
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S85XQWMND6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-S85XQWMND6', {
+            // Report "/index.html" as "/" and "/zh-cn/index.html" as "/zh-cn/",
+            // so a home page doesn't appear as two separate rows in GA4's
+            // Page path report depending on how the visitor arrived.
+            page_path: location.pathname.replace(/index\.html$/, '')
+        });
+    </script>
+
+    <!-- Tells search engines this is a person's academic page, which language
+         version this is, and how the language versions relate. -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://alberttianyuyan.github.io/research.html#page",
+        "url": "https://alberttianyuyan.github.io/research.html",
+        "name": "Research",
+        "inLanguage": "en",
+        "isPartOf": {
+            "@id": "https://alberttianyuyan.github.io/#website"
+        },
+        "about": {
+            "@id": "https://alberttianyuyan.github.io/#person"
+        }
+    }
+    </script>
 </head>
-<body class="research-page">
+<body>
+    <!-- Keyboard-only shortcut past the header. Sits off-screen until
+         focused, so it is invisible to mouse users but is the first
+         thing a keyboard user reaches. -->
+    <a class="skip-link" href="#main">Skip to content</a>
     <header>
+        <button class="hamburger" type="button" aria-label="Open menu"
+                aria-expanded="false" aria-controls="site-nav">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <h1><a href="index.html">Albert Tianyu Yan</a></h1>
-        <nav>
+        <nav id="site-nav">
+            <button class="nav-close" type="button" aria-label="Close menu">
+                <span class="icon-x"></span>
+            </button>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li class="current"><a href="research.html">Research</a></li>
@@ -19,17 +86,39 @@
                 <li><a href="blog.html">Blogs</a></li>
             </ul>
         </nav>
+        <details class="lang-switch">
+            <summary aria-label="Language">
+                <svg class="lang-switch__globe" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+                    <circle cx="12" cy="12" r="9"></circle>
+                    <path d="M3 12h18"></path>
+                    <path d="M12 3c2.6 2.7 2.6 15.3 0 18-2.6-2.7-2.6-15.3 0-18z"></path>
+                </svg>
+                <span>EN</span>
+            </summary>
+            <ul class="lang-switch__menu">
+                <li><a href="research.html" hreflang="en" aria-current="true">English</a></li>
+                <li><a href="zh-cn/research.html" hreflang="zh-Hans">简体中文</a></li>
+                <li><a href="zh-hk/research.html" hreflang="zh-HK">繁體中文</a></li>
+            </ul>
+        </details>
+        <button class="search-toggle" type="button" aria-label="Search this site">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+                <circle cx="11" cy="11" r="7"></circle>
+                <line x1="16.5" y1="16.5" x2="21" y2="21"></line>
+            </svg>
+        </button>
+        <div class="nav-backdrop"></div>
     </header>   
 
-    <section class="main">
+    <section class="main" id="main" tabindex="-1">
         <div class="container">
             <h2>Research</h2>
             
             <h3>Working Papers</h3>
             <ul>
-                <li style="margin-bottom: 14px;">
+                <li class="research-entry">
                     From Idea to Innovation: Scientific Disclosures, Technology News, and Business Cycles
-                    <a href="https://drive.google.com/file/d/1O_otqElO50w8891acQa2hP6CuDYE6SCY/view?usp=sharing" target="_blank" style="margin-left: 10px;">[slides]</a> 
+                    <a href="https://drive.google.com/file/d/1O_otqElO50w8891acQa2hP6CuDYE6SCY/view?usp=sharing" target="_blank">[slides]</a> 
     
                 </li>
             </ul>
@@ -41,26 +130,24 @@
         </div>
     </section>
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const hamburger = document.querySelector('.hamburger');
-    const nav = document.querySelector('nav');
-    
-    hamburger.addEventListener('click', function() {
-        hamburger.classList.toggle('active');
-        nav.classList.toggle('active');
-    });
-    
-    // Close menu when clicking on nav links
-    const navLinks = document.querySelectorAll('nav a');
-    navLinks.forEach(link => {
-        link.addEventListener('click', function() {
-            hamburger.classList.remove('active');
-            nav.classList.remove('active');
-        });
-    });
-});
-</script>
+<dialog class="search-dialog" id="search-dialog" aria-label="Search this site">
+    <div class="search-field">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+            <circle cx="11" cy="11" r="7"></circle>
+            <line x1="16.5" y1="16.5" x2="21" y2="21"></line>
+        </svg>
+        <input type="search" id="search-input" placeholder="Search this site"
+               autocomplete="off" autocapitalize="off" spellcheck="false">
+        <button class="search-close" type="button" aria-label="Close search">
+            <span class="icon-x"></span>
+        </button>
+    </div>
+    <p class="search-status" id="search-status" role="status" aria-live="polite"></p>
+    <ul class="search-results" id="search-results"></ul>
+</dialog>
+
+<script src="search-index.js" defer></script>
+<script src="script.js" defer></script>
 
 </body>
 </html>

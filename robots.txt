@@ -1,0 +1,9 @@
+# No Disallow rules are needed. The only files in this folder that aren't meant
+# for visitors are the local-only dev scripts, and those are gitignored so they
+# never exist on the published site. Listing them here would only advertise
+# paths that don't exist.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://alberttianyuyan.github.io/sitemap.xml

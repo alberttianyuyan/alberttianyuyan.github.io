@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-HK">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,26 +8,26 @@
          safely collapse. Without JS the full menu stays visible on every page. -->
     <script>document.documentElement.classList.add('js-nav');</script>
 
-    <meta name="description" content="Occasional writing by Albert Tianyu Yan on research, innovation and academic life, alongside notes on papers and teaching in economics.">
-    <meta name="keywords" content="Albert Yan, Blog, Research, Innovation, Academic Life, Economics, Finance">
-    <title>Albert Tianyu Yan - Blogs</title>
-    <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="favicon-96.png" sizes="96x96" type="image/png">
+    <meta name="description" content="閆天雨在德州大學奧斯汀分校擔任助教，負責的科目包括因果推論、計量經濟學、機器學習、金融經濟學、數理微觀經濟學與宏觀經濟學理論等。">
+    <meta name="keywords" content="閆天雨, Albert Yan, 教學, 助教, 經濟學, 計量經濟學, 德州大學奧斯汀分校">
+    <title>閆天雨 - 教學</title>
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="../favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="../favicon-96.png" sizes="96x96" type="image/png">
     <!-- The font is linked here rather than @import-ed from styles.css: an
          @import is only discovered once the stylesheet has downloaded, which
          delays the font request and blocks text rendering until it lands. -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
 
     <!-- Tells search engines that these URLs are the same page in other
          languages, so they are not treated as duplicate content. -->
-    <link rel="alternate" hreflang="en" href="https://alberttianyuyan.github.io/blog.html">
-    <link rel="alternate" hreflang="zh-Hans" href="https://alberttianyuyan.github.io/zh-cn/blog.html">
-    <link rel="alternate" hreflang="zh-HK" href="https://alberttianyuyan.github.io/zh-hk/blog.html">
-    <link rel="alternate" hreflang="x-default" href="https://alberttianyuyan.github.io/blog.html">
+    <link rel="alternate" hreflang="en" href="https://alberttianyuyan.github.io/teaching.html">
+    <link rel="alternate" hreflang="zh-Hans" href="https://alberttianyuyan.github.io/zh-cn/teaching.html">
+    <link rel="alternate" hreflang="zh-HK" href="https://alberttianyuyan.github.io/zh-hk/teaching.html">
+    <link rel="alternate" hreflang="x-default" href="https://alberttianyuyan.github.io/teaching.html">
 
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-S85XQWMND6"></script>
@@ -49,10 +49,10 @@
     {
         "@context": "https://schema.org",
         "@type": "WebPage",
-        "@id": "https://alberttianyuyan.github.io/blog.html#page",
-        "url": "https://alberttianyuyan.github.io/blog.html",
-        "name": "Blogs",
-        "inLanguage": "en",
+        "@id": "https://alberttianyuyan.github.io/zh-hk/teaching.html#page",
+        "url": "https://alberttianyuyan.github.io/zh-hk/teaching.html",
+        "name": "教學",
+        "inLanguage": "zh-HK",
         "isPartOf": {
             "@id": "https://alberttianyuyan.github.io/#website"
         },
@@ -62,78 +62,83 @@
     }
     </script>
 </head>
+
 <body>
     <!-- Keyboard-only shortcut past the header. Sits off-screen until
          focused, so it is invisible to mouse users but is the first
          thing a keyboard user reaches. -->
-    <a class="skip-link" href="#main">Skip to content</a>
+    <a class="skip-link" href="#main">跳至主要內容</a>
     <header>
-        <button class="hamburger" type="button" aria-label="Open menu"
+        <button class="hamburger" type="button" aria-label="開啟選單"
                 aria-expanded="false" aria-controls="site-nav">
             <span></span>
             <span></span>
             <span></span>
         </button>
-        <h1><a href="index.html">Albert Tianyu Yan</a></h1>
+        <h1><a href="index.html">閆天雨</a></h1>
         <nav id="site-nav">
-            <button class="nav-close" type="button" aria-label="Close menu">
+            <button class="nav-close" type="button" aria-label="關閉選單">
                 <span class="icon-x"></span>
             </button>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="teaching.html">Teaching</a></li>
-                <li class="current"><a href="blog.html">Blogs</a></li>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="research.html">研究</a></li>
+                <li class="current"><a href="teaching.html">教學</a></li>
+                <li><a href="blog.html">網誌</a></li>
             </ul>
         </nav>
         <details class="lang-switch">
-            <summary aria-label="Language">
+            <summary aria-label="語言">
                 <svg class="lang-switch__globe" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
                     <circle cx="12" cy="12" r="9"></circle>
                     <path d="M3 12h18"></path>
                     <path d="M12 3c2.6 2.7 2.6 15.3 0 18-2.6-2.7-2.6-15.3 0-18z"></path>
                 </svg>
-                <span>EN</span>
+                <span>繁</span>
             </summary>
             <ul class="lang-switch__menu">
-                <li><a href="blog.html" hreflang="en" aria-current="true">English</a></li>
-                <li><a href="zh-cn/blog.html" hreflang="zh-Hans">简体中文</a></li>
-                <li><a href="zh-hk/blog.html" hreflang="zh-HK">繁體中文</a></li>
+                <li><a href="../teaching.html" hreflang="en">English</a></li>
+                <li><a href="../zh-cn/teaching.html" hreflang="zh-Hans">简体中文</a></li>
+                <li><a href="../zh-hk/teaching.html" hreflang="zh-HK" aria-current="true">繁體中文</a></li>
             </ul>
         </details>
-        <button class="search-toggle" type="button" aria-label="Search this site">
+        <button class="search-toggle" type="button" aria-label="搜尋本站">
             <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
                 <circle cx="11" cy="11" r="7"></circle>
                 <line x1="16.5" y1="16.5" x2="21" y2="21"></line>
             </svg>
         </button>
         <div class="nav-backdrop"></div>
-    </header>   
+    </header>
 
     <section class="main" id="main" tabindex="-1">
         <div class="container">
-            <h2>Blogs</h2>
-            <p>This is where I occasionally post thoughts on research, opinions, and academic life.</p>
-            
-            <h3>Recent Posts</h3>
+            <h2>教學</h2>
+            <h3>助教</h3>
+            <h4>德州大學奧斯汀分校</h4>
+
             <ul>
-                <!-- <li>
-                    <strong><a href="#">Coming soon: Beginners' Guide: How Do Successful Economists Come Up
-                    With Research Ideas?</a></strong> 
-                </li> -->
+                <li>因果推論</li>
+                <li>Python、數據庫與大數據</li>
+                <li>機器學習</li>
+                <li>計量經濟學</li>
+                <li>金融素養</li>
+                <li>金融經濟學</li>
+                <li>數理微觀經濟學</li>
+                <li>宏觀經濟學理論</li>
             </ul>
         </div>
     </section>
 
-<dialog class="search-dialog" id="search-dialog" aria-label="Search this site">
+<dialog class="search-dialog" id="search-dialog" aria-label="搜尋本站">
     <div class="search-field">
         <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
             <circle cx="11" cy="11" r="7"></circle>
             <line x1="16.5" y1="16.5" x2="21" y2="21"></line>
         </svg>
-        <input type="search" id="search-input" placeholder="Search this site"
+        <input type="search" id="search-input" placeholder="搜尋本站"
                autocomplete="off" autocapitalize="off" spellcheck="false">
-        <button class="search-close" type="button" aria-label="Close search">
+        <button class="search-close" type="button" aria-label="關閉搜尋">
             <span class="icon-x"></span>
         </button>
     </div>
@@ -141,8 +146,18 @@
     <ul class="search-results" id="search-results"></ul>
 </dialog>
 
-<script src="search-index.js" defer></script>
-<script src="script.js" defer></script>
+<script>
+    /* Lets script.js report search results in this page's language. */
+    window.SITE_I18N = {
+        hint: "搜尋全站內容 — 按 Esc 關閉。",
+        indexEmpty: "搜尋索引為空。",
+        resultsOne: "1 項結果",
+        resultsMany: "{n} 項結果",
+        noResults: "找不到「{q}」"
+    };
+</script>
+<script src="../search-index.zh-hk.js" defer></script>
+<script src="../script.js" defer></script>
 
 </body>
 </html>
