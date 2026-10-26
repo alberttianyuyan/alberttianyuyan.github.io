@@ -4,7 +4,7 @@
  *   rebuild once        python build_search_index.py
  *   rebuild on change   python build_search_index.py --watch
  *
- * Last changed: 2026-09-26 21:52 from 4 page(s).
+ * Last changed: 2026-10-26 16:04 from 4 page(s).
  *
  * To add a result that is not a page in this repo (an external link, for
  * instance), put it between the two MANUAL-ENTRIES markers below.
@@ -15,22 +15,22 @@ window.SITE_SEARCH_INDEX = [
     {
         title: "Home",
         url: "index.html",
-        text: "Home I am a PhD student in Economics at UT Austin working on behavioral economics, macro-finance, causal inference, and machine learning. Tianyu, Yan, PhD, University of Texas, Austin, Research, Teaching, Blog Home I am a PhD student in Economics at the University of Texas, Austin. Before joining UT Austin, I received my B.A. in Computer Science and Economics from New York University. RESEARCH INTERESTS Behavioral Economics CV Click here for a copy of my CV. CONTACT Email: tianyu.yan@utexas.edu"
+        text: "Home I am a PhD student in Economics at UT Austin working on behavioral economics, causal inference, and machine learning. Tianyu, Yan, PhD, University of Texas, Austin, Research, Teaching, Blog Home I am a PhD student in Economics at the University of Texas, Austin. Before joining UT Austin, I received my B.A. in Computer Science and Economics from New York University. RESEARCH INTERESTS Behavioral Economics CV Click here for a copy of my CV. CONTACT Email: tianyu.yan@utexas.edu"
     },
     {
         title: "Blogs — Recent Posts",
         url: "blog.html",
-        text: "Blogs — Recent Posts Occasional writing by Albert Tianyu Yan on research, innovation and academic life, alongside notes on papers and teaching in economics. Blog, Research, Innovation, Academic Life Blogs This is where I occasionally post thoughts on research, opinions, and academic life. Recent Posts"
+        text: "Blogs — Recent Posts Occasional writing by Tianyu (Albert) Yan on research, innovation and academic life, alongside notes on papers and teaching in economics. Blog, Research, Innovation, Academic Life Blogs This is where I occasionally post thoughts on research, opinions, and academic life. Recent Posts"
     },
     {
         title: "Research",
         url: "research.html",
-        text: "Research Working papers and research in progress by Albert Tianyu Yan, PhD student in Economics at the University of Texas at Austin. Slides and paper links. PhD, University of Texas, Austin, Research, Working Papers, Publications, Projects Research Working Papers From Idea to Innovation: Scientific Disclosures, Technology News, and Business Cycles [slides] Selected Work in Progress"
+        text: "Research Working papers and research in progress by Tianyu (Albert) Yan, PhD student in Economics at the University of Texas at Austin. Slides and paper links. PhD, University of Texas, Austin, Research, Working Papers, Publications, Projects Research Working Papers From Idea to Innovation: Scientific Disclosures, Technology News, and Business Cycles [slides] Selected Work in Progress"
     },
     {
         title: "Teaching — Teaching Assistant",
         url: "teaching.html",
-        text: "Teaching — Teaching Assistant Courses taught by Albert Tianyu Yan as a teaching assistant at the University of Texas at Austin: econometrics, machine learning and causal inference. Teaching, PhD, University of Texas, Austin Teaching Teaching Assistant University of Texas at Austin Causal Inference Python, Databases, and Big Data Machine Learning Econometrics Financial Literacy Financial Economics Mathematical Microeconomics Theory Macroeconomics Theory"
+        text: "Teaching — Teaching Assistant Courses taught by Tianyu (Albert) Yan as a teaching assistant at the University of Texas at Austin: econometrics, machine learning and causal inference. Teaching, PhD, University of Texas, Austin Teaching Teaching Assistant University of Texas at Austin Causal Inference Python, Databases, and Big Data Machine Learning Econometrics Financial Literacy Financial Economics Mathematical Microeconomics Theory Macroeconomics Theory"
     },
 
     // ---- hand-written entries, preserved as-is ----
