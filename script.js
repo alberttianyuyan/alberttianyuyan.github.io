@@ -97,9 +97,9 @@ document.addEventListener('DOMContentLoaded', function () {
     var index = window.SITE_SEARCH_INDEX || [];
 
     /*
-     * Chinese pages set window.SITE_I18N with their own wording for the
-     * results summary. Everything falls back to English, so the English
-     * pages need no translation block at all.
+     * Optional per-page overrides for the results summary: a page that sets
+     * window.SITE_I18N gets its own wording. Everything falls back to English,
+     * so a page needs no override block at all.
      */
     var messages = window.SITE_I18N || {};
 
